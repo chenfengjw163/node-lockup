@@ -1,10 +1,9 @@
-language : node_js
+language: node_js
 node_js:
  - "8"
 
-
 os:
- - linux
+ - linux  
 
 install:
 - npm install
@@ -12,15 +11,18 @@ install:
 if: branch = master
 
 stages:
- - name: test
- - name: deploy
+ - test
+ - deploy
 
 jobs:
  include:
    - stage: test
-    name: test
-    script: npm run test
+     name: test
+     script: npm run test
    - stage: deploy
+     name: deploy
+     script:
+       - npm version
      deploy:
        provider: npm
        email: chenfengjw@hotmail.com
