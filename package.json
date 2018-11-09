@@ -1,0 +1,22 @@
+{
+  "name": "node-lockup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine JASMINE_CONFIG_PATH=test/jasmine.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenfengjw163/node-lock.git"
+  },
+  "author": "chenfengjw@hotmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chenfengjw163/node-lock/issues"
+  },
+  "homepage": "https://github.com/chenfengjw163/node-lock#readme",
+  "devDependencies": {
+    "jasmine": "^3.3.0"
+  }
+}
