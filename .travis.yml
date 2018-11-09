@@ -3,7 +3,7 @@ node_js:
  - "8"
 
 os:
- - linux
+ - linux  
 
 install:
 - npm install
@@ -20,6 +20,11 @@ jobs:
      name: test
      script: npm run test
    - stage: deploy
+     name: deploy
+     script:
+       - echo "NPM Deploying Started ..."
+       - npm version
+       - echo "NPM Building Finished."
      deploy:
        provider: npm
        email: chenfengjw@hotmail.com
