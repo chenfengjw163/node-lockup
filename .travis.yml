@@ -8,8 +8,6 @@ os:
 install:
 - npm install
 
-if: branch = master
-
 stages:
  - test
  - deploy
@@ -21,6 +19,7 @@ jobs:
      script: npm run test
    - stage: deploy
      name: deploy
+     if: commit_message =~ release to npm
      script:
        - npm version
      deploy:
