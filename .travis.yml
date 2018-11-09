@@ -2,7 +2,6 @@ language: node_js
 node_js:
  - "8"
 
-
 os:
  - linux
 
@@ -18,8 +17,8 @@ stages:
 jobs:
  include:
    - stage: test
-    name: test
-    script: npm run test
+     name: test
+     script: npm run test
    - stage: deploy
      deploy:
        provider: npm
