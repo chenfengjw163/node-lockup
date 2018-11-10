@@ -19,7 +19,7 @@ jobs:
      script: npm run test
    - stage: deploy
      name: deploy
-     if: commit_message =~ /release to npm/
+     if: commit_message =~ /release_npm/
      script:
        - npm version
      deploy:
