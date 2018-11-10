@@ -1,4 +1,4 @@
-const lockup = require('../lib/index.js')
+const lockup = require('node-lockup')
 
 const task = (params) => {
   return new Promise((resolve, reject) => {
