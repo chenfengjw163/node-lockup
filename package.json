@@ -1,7 +1,7 @@
 {
   "name": "node-lockup",
   "version": "1.0.1",
-  "description": "",
+  "description": "node-lockup",
   "main": "lib/index.js",
   "scripts": {
     "test": "jasmine JASMINE_CONFIG_PATH=test/jasmine.json"
