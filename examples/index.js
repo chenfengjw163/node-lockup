@@ -12,7 +12,7 @@ const task = (params) => {
   })
 }
 
-const lockTask = lockup(task)
+const lockTask = lockup(task, 100)
 
 
 for (let i = 0; i < 200; i++) {

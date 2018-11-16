@@ -22,6 +22,7 @@ const task = (params) => { // 需要排队执行的异步函数
 }
 
 const lockTask = lockup(task) // 创建排队执行函数
+//const lockTask = lockup(task, 100) // 创建排队执行函数，间隔100ms执行
 
 module.exports = async (req, res, next) => {
   const result = await lockTask(params) //所有请求排队执行，执行速度取决于task函数执行速度
